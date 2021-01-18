@@ -2,6 +2,7 @@
 // var print = document.getElementById('el');
 
 //Creazione oggetto con display delle proprietà
+console.log('PROPRIETA\' DEL PRIMO STUDENTE');
 var studente = {
     nome : "Pinco",
     cognome : "Pallino",
@@ -33,3 +34,12 @@ var studenteZ = {
 }
 
 var studenti = [studente, studenteX, studenteY, studenteZ]
+
+//Stampo nome e cognome degli studenti nell'array
+console.log('NOME E COGNOME DEL RESTO DEGLI STUDENTI');
+
+for ( var i = 0; studenti.length > i; i++) {
+    var singoloOggetto = studenti[i];
+    console.log(singoloOggetto.nome);
+    console.log(singoloOggetto.cognome);    
+}
